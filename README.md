@@ -27,7 +27,7 @@ Open [http://localhost:3000](http://localhost:3000) and check result.
 
 **Environment Variables:**
 - `MONGODB_URI=mongodb+srv://...`
-- `CLIENT_URL=`<your service URL (for ex.: https://your-app.onrender.com)>
+- `CLIENT_URL=`<your service URL (for ex.: [https://your-app.onrender.com](https://your-app.onrender.com))>
 
 ## Commands
 | Command          | Description                              |

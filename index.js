@@ -80,7 +80,6 @@ io.on('connection', async (socket) => {
 });
 
 // Запуск сервера
-const PORT = 5000;
-server.listen(PORT, () => {
-    console.log(`Сервер запущено на порту http://localhost:${PORT}`);
+server.listen(process.env.PORT || 5000, () => {
+    console.log(`Сервер запущено на порту http://localhost:${process.env.PORT || 5000}`);
 });
