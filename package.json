@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "client": "cd client && npm start",
-    "build-client": "cd client && npm run build",
-    "dev": "concurrently \"npm start\" \"npm run client\"",
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "build-client": "npm run build --prefix client",
+    "install-client": "npm install --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "setup": "npm install && npm install --prefix client",
     "build": "npm run build-client"
   },
   "keywords": [],
@@ -21,6 +24,7 @@
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.15.0",
+    "nodemon": "^3.1.10",
     "socket.io": "^4.8.1"
   },
   "devDependencies": {
